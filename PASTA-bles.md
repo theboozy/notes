@@ -64,9 +64,14 @@ ssh -i /home/user/stolenkey jane@10.20.30.40
 proxychains xfreerdp /u:comrade /p:StudentMidwayPassword /v:192.168.28.9 /clipboard
 ```
 
+## PING SWEEP COMMAND (ON TARGET)
+```
+for i in {1..255}; do (ping -c 1 10.208.50.$i | grep "bytes from" &); done
+```
 
-
-
-
+## HTTP ENUM SCRIPT
+```
+proxychains nmap --script=http-enum <IP>
+```
 
 
