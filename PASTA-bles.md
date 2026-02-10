@@ -15,7 +15,7 @@ ssh -MS /tmp/jmp student@10.50.16.246
       ssh -S /tmp/jmp jmp -O cancel -D 9050
 ```
 > <sub> dynamic port close <sub>
-#### TUNNEL TO T1
+##### TUNNEL TO T1
 ```
 ssh -p21630 -MS /tmp/t1 www-data@127.0.0.1
 ```
@@ -33,7 +33,7 @@ ssh -p21630 -MS /tmp/t1 www-data@127.0.0.1
 ```
 > <sub> dynamic port close <sub>
 
-#### TUNNEL TO TARGET AFTER T1
+##### TUNNEL TO TARGET AFTER T1
 ``` 
 ssh -p21631 -MS /tmp/intra comrade@127.0.0.1
 ```
