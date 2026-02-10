@@ -1,0 +1,13 @@
+ssh -MS /tmp/jmp student@10.50.16.246
+  ssh -S /tmp/jmp jmp -O forward -L 21630:192.168.28.100:2222
+      ssh -S /tmp/jmp jmp -O forward -D 9050
+      ssh -S /tmp/jmp jmp -O cancel -D 9050
+
+          ssh -p21630 -MS /tmp/t1 www-data@127.0.0.1
+            ssh -S /tmp/t1 t1 -O forward -L 21631:192.168.150.253:3201
+                ssh -S /tmp/t1 t1 -O forward -D 9050
+                ssh -S /tmp/t1 t1 -O cancel -D 9050
+
+                    ssh -p21631 -MS /tmp/intra comrade@127.0.0.1 
+                          ssh -S /tmp/intra intra -O forward -D 9050
+                          ssh -S /tmp/intra intra -O cancel -D 9050
