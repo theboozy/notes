@@ -2,6 +2,10 @@
 ```
 ssh -MS /tmp/jmp student@10.50.16.246
 ```
+> jump pass
+```
+0f8z4U4hgYfG
+```
 > <sub> initial master socket to jump box <sub>
 ```
   ssh -S /tmp/jmp jmp -O forward -L 21630:192.168.28.100:2222
