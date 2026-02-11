@@ -38,3 +38,47 @@ schtasks.exe /query /fo LIST /v | Select-String -Pattern "Task To Run" -CaseSens
 New-ItemProperty -path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run -name "Updater" -PropertyType expandstring -value 'C:\Windows\System32\cmd.exe /c calc.exe' -force
 ```
 
+
+## MOST IMPORTANT REGISTRY KEYS
+```
+HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run
+```
+```
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
+```
+
+# SERVIES
+## CLIKC ON THE DESCRIPTION TAB AND SORT TO FIND THE SERVICE WITH NO DESCRIPTION, EVENTUALY THE EMPTY ONES WILL GO TO THE TOP
+## EMPTY DESCRIPTIONS AND MISPELLINGS
+## WEIRD EXECUTABLE
+
+COPY PATH TO EXECUTABLE AND PASTE INTO FILE EXPLORER, LOOK FOR OTHER ARTFACTS IN THAT SAME DIRECTORY
+ALSO IN FILE EXPLORER MAKE SURE TO TAKE A QUICK GLANCE AT THE HIDDEN FOLDERS 
+   VIEW ---> [ CHECK ] HIDDEN ITEMS
+
+CHANGE THE SORT TO FIND THE FEWEST 
+
+we'll b e woring off the run more often than not becuase we want it to run every time, 
+
+# audtipol /get /category:* findstr /i "success failure"
+   make sure to run as an administrator
+
+
+# SCHEDULED TASKS
+## TAKE A LOOK AT THE TRIGGERS - WHAT CAUSES IT
+## TAKE A LOOK AT THE ACTIONS - WHAT IS GOING ON
+
+
+GIVEN AN EXECUTBALE
+
+CONSISTENT THING IN REG OR SCHTASKS
+
+RENAME OLD EXEC TO RANDOM - RENAME THE NEW AS THE OLD THATS SCHEDUELD TO RUN
+
+
+
+# LOG ITEMS IS EVENT VIEWER
+
+WINDOWS LOGS, RIGHT CLICK, PROPERTIES.
+
+CREATE (CHANGE TIME SET)  ANY TIME --> CUSTOM RANGE, CHANGE TIME AND DATES TO MATCH WHAT YOURE LOOKING FOR
