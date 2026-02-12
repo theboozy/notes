@@ -13,7 +13,7 @@ find / -type f -perm /2000 -ls 2>/dev/null
 ```
 find **_SUID_** and **_SGID_** files
 ```
-find / -type f -perm /6000 -ls 2>/dev/nul
+find / -type f -perm /6000 -ls 2>/dev/null
 ```
 the ways you can **_ABUSE_** **MISCONFIGURATIONS**__ and escalate and whatever
 ```
