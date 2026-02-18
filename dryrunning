@@ -65,6 +65,7 @@ www-data
 
 $ cd /var/tmp
 $ ls -lisha
+$ sudo -l
 
 262159 4.0K drwxrwxrwt  5 root root 4.0K Feb 17 18:52 .
 262146 4.0K drwxr-xr-x 14 root root 4.0K Mar 13  2025 ..
